@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car'Space</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('head').load('/assets/partials/meta.html');
+            $('header').load('/assets/partials/headerhome.html');
+            $('footer').load('/assets/partials/footer.html');
+            $('#scripts').load('/assets/partials/scripts.html');
+        });
+    </script>
 </head>
+
 <body>
-    
+    <header>
+        <!--Importado-->
+    </header>
+    <main>
+
+        <body background="/assets/resources/background.jpg">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/resources/background.jpg" class="d-block w-100" alt="Logo" width="500"
+                            height="900">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/Handicap Parking Space_edited_fixed.jpg" class="d-block w-100" alt="Logo"
+                            width="500" height="900">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/parqueadero_fix.jpg" class="d-block w-100" alt="Logo" width="500" height="900">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </body>
+    </main>
+    <footer>
+        <!--Importado-->
+    </footer>
+    <div id="scripts">
+        <!--Importado-->
+    </div>
 </body>
+
 </html>
