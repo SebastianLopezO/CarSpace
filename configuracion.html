@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('head').load('/assets/partials/meta.html');
+            $('#scripts').load('/assets/partials/scripts.html');
+        });
+    </script>
+</head>
+
+<body>
+    <main class="d-flex flex-nowrap" style="min-height:100vh; background:#000000;">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px; background:#000000;">
+            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <img src="https://cdn-icons-png.flaticon.com/512/1873/1873841.png" alt=" " width="45" height="45">
+                <span class="fs-4 ms-3">Configuracion</span>
+            </a>
+            <hr>
+            <ul class="nav flex-column mb-auto text-light">
+                <li class="p-3">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" disabled>
+                </li>
+
+                <li class="p-3">
+                    <input type="text" class="form-control" id="passchan" placeholder="Contraseña" disabled>
+                </li>
+                
+
+
+            </ul>
+            <hr>
+            <div class="dropdown" id="side">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/resources/img/Default_pfp_svg.png" alt="" width="32" height="32"
+                        class="rounded-circle me-2">
+                    <div id="user"></div>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="reservas.html">Reservas</a></li>
+                    <li><a class="dropdown-item" href="estadisticas.html">Estadisticas</a></li>
+                    <li><a class="dropdown-item" href="user.html">Mi cuenta</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="index.html">Cerrar Sesion</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container px-4 py-5 text-bg-secondary">
+            <header class="mb-auto">
+                <div>
+                    <h3 class="container float-md-start mb-0 text-center">Configure su aplicacion</h3>
+                </div>
+            </header>
+
+            <div class="px-4">
+                <div class="list-group mx-0 w-auto d-block mx-auto ">
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios"
+                            id="mode" value="" checked>
+                        <span>
+                            Modo claro
+                            <small class="d-block text-muted">Tan brillante como el sol!</small>
+                        </span>
+                    </label>
+                    <label class="list-group-item d-flex gap-2">
+                        <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios"
+                            id="listGroupRadios2" value="">
+                        <span>
+                            Modo oscuro
+                            <small class="d-block text-muted">Elegante y relajante para la vista para cuando conduzcas
+                                de noche!</small>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="row">
+                    <div class="gap-2">
+                        <div class="dark-bg-text text-center m-4">
+                            <h3>Autenticación en dos pasos</h3>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <label for="" class="">Correo electronico</label>
+                            <input type="email" class="form-control " id="mail" placeholder="Correo Electronico" required>
+                            <button type="button" class="btn btn-light text-dark m-2 d-block mx-auto" id="send">Hecho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="scripts">
+
+        </div>
+</body>
+
+</html>

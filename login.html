@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('head').load('/assets/partials/meta.html');
+      $('#scripts').load('/assets/partials/scripts.html');
+    });
+  </script>
+  <link href="/assets/resources/css/signin.css" rel="stylesheet">
+</head>
+
+<body class="text-center text-light bg-black">
+  <link href="/assets/resources/css/signin.css" rel="stylesheet">
+  <main class="form-signin w-100 m-auto">
+    <form id="basic-form">
+      <img class="mb-4" src="/assets/resources/favicon.ico" alt="" width="250" height="250">
+      <div class="form-floating my-2">
+        <input type="text" class="form-control" id="user" placeholder="abcd" disabled required>
+        <label for="user" small class="text-muted">User</label>
+      </div>
+      <div class="form-floating my-2">
+        <input type="text" name="e2" class="form-control" id="contraseña" placeholder="*********" required>
+        <label for="contraseña" small class="text-muted">Contraseña</label>
+      </div>
+
+      </div>
+      <input type="button" class="w-100 btn btn-lg btn-warning my-4" value="Generar" id="gen">
+      <input type="button" class="w-100 btn btn-lg btn-warning" value="Ingresar" id="ing" disabled>
+      </div>
+
+    </form>
+  </main>
+
+
+  <div id="scripts">
+
+  </div>
+
+</body>
+
+</html>

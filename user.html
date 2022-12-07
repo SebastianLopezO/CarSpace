@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('head').load('/assets/partials/meta.html');
+			$('#scripts').load('/assets/partials/scripts.html');
+		});
+	</script>
+</head>
+
+<body>
+	<main class="d-flex flex-nowrap">
+		<div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px; min-height: 100vh;">
+			<a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+				<img src="assets/resources/favicon.ico" alt=" " width="80" height="80">
+				<span class="fs-4">Mi Cuenta</span>
+			</a>
+			<hr>
+			<ul class="nav flex-column mb-auto text-light">
+				<div class="cuadrado">Nombre</div>
+				<li>
+					<div class="p-3">
+						<input type="text" class="form-control" id="uno" placeholder="Nombre" disabled>
+					</div>
+				</li>
+			</ul>
+			<hr>
+			<div class="dropdown" id="side">
+				<a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+					data-bs-toggle="dropdown" aria-expanded="false">
+					<img src="assets/resources/img/Default_pfp_svg.png" alt="" width="32" height="32"
+						class="rounded-circle me-2">
+					<div id="user"></div>
+				</a>
+
+				</strong>
+				<ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+					<li><a class="dropdown-item" href="reservas.html">Reservas</a></li>
+					<li><a class="dropdown-item" href="estadisticas.html">Estadisticas</a></li>
+					<li><a class="dropdown-item" href="configuracion.html">Configuracion</a></li>
+					<li>
+						<hr class="dropdown-divider">
+					</li>
+					<li><a class="dropdown-item" href="index.html">Cerrar Sesion</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="container px-4 py-5 text-bg-secondary">
+			<header class="mb-auto">
+				<div>
+					<h3 class="container float-md-start mb-0 text-center">Administre sus vehículos</h3>
+				</div>
+			</header>
+
+			<main class="px-3">
+				<div class="container-fluid text-light p-5">
+					<div class="form-group">
+						<div class="dark-bg-text align-items-center text-center">
+							<button type="button" class="redondo btn-success text-white"
+								style="background:rgb(0, 121, 30)" data-bs-toggle="modal"
+								data-bs-target="#exampleModal">Añadir</button>						
+						</div>
+					</div>
+
+					<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content model-bg-dark" style="background:#212121"style="background:#212121">
+								<div class="modal-header">
+									<h5 class="modal-title text-white" id="exampleModalLabel">Añade tu vehículo</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<label for="" class="text-white">Modelo vehículo</label>
+									<input type="text" class="form-control text-dark" id="model"
+										placeholder="Modelo vehículo">
+									<label for="" class="text-white">Matricula del vehículo</label>
+									<input type="text" class="form-control text-dark" id="matricula"
+										placeholder="Matricula del vehículo">
+									<label for="" class="text-white">Foto</label>
+									<select class="form-select" aria-label="car" id="car" required>
+										<option selected value="">Seleccione</option>
+										<option value="BMW">BMW</option>
+										<option value="AUDI">AUDI</option>
+										<option value="CHEVROLET">CHEVROLET</option>
+										<option value="FORD">FORD</option>
+									</select>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary"
+										data-bs-dismiss="modal">Cerrar</button>
+									<button type="button" class="btn btn-primary" id="env">Guardar cambios</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="navbar navbar-expand-lg navbar-dark">
+						<div id="contenedor" class="container-fluid text-light p-5" style="background:#6C757D">
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		</div>
+		<footer>
+			<!-- place footer here -->
+		</footer>
+		<!-- Bootstrap JavaScript Libraries -->
+		<div id="scripts">
+
+		</div>
+</body>
+
+</html>
